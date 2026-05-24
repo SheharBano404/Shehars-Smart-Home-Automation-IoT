@@ -80,7 +80,7 @@ Follow these steps to set up the Smart Home Automation system:
 
 ### 3. ThingSpeak Analytics
 * **Account Setup:** Sign up at [ThingSpeak](https://thingspeak.com/).
-* **Channel Configuration:** Create a "New Channel". Enable "Field 1" for Temperature and "Field 2" for Humidity.
+* **Channel Configuration:** Create a "New Channel". Enable "Field 1" for Temperature, "Field 2" for Humidity, "Field 3" for Motion Detection, and "Field 4" for LED/FAN.
 * **API Key:** Go to the "API Keys" tab in your channel, copy the **Write API Key**, and update it in your ESP32 code (`main.ino`).
 
 ### 4. Web Dashboard
