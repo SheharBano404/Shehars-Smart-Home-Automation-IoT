@@ -1,0 +1,15 @@
+{
+  "Home": {
+    "Alert": "NORMAL!",
+    "Control": {
+      "Fan": 1,
+      "Light": 1
+    },
+    "Sensors": {
+      "GasLevel": 120,
+      "Humidity": 50,
+      "Motion": 1,
+      "Temperature": 25
+    }
+  }
+}

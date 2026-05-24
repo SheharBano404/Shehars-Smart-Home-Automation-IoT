@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehars Smart Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-icon">🏠</div>
+    <div>
+      <div class="brand-name">Shehars Galaxy</div>
+      <div class="brand-sub">SMART HOME AUTOMATION DASHBOARD</div>
+    </div>
+  </div>
+  <div class="sys-badge" id="sysBadge">
+    <span class="pulse"></span>
+    <span id="sysText">All systems normal</span>
+    <span></span><span></span><span></span>
+    <div class="clock-val" id="clock">--:--:--</div>
+    <span></span><span></span><span></span>
+    <div class="clock-date" id="dateLbl">Loading…</div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="card card-temp">
+    <div class="card-hd">
+      <div class="card-title">🌡️ Temperature</div>
+      <span class="badge badge-pink">Indoor</span>
+    </div>
+    <div class="ring-area">
+      <canvas id="tempRing" width="100" height="100"></canvas>
+      <div class="ring-val"><span id="tempVal">--</span><span class="ring-unit">°C</span></div>
+      <div class="ring-sub" id="tempStatus">Loading…</div>
+    </div>
+  </div>
+
+  <div class="card card-hum">
+    <div class="card-hd">
+      <div class="card-title">💧 Humidity</div>
+      <span class="badge badge-teal">Relative</span>
+    </div>
+    <div class="ring-area">
+      <canvas id="humRing" width="100" height="100"></canvas>
+      <div class="ring-val"><span id="humVal">--</span><span class="ring-unit">%</span></div>
+      <div class="ring-sub" id="humStatus">Loading…</div>
+    </div>
+  </div>
+
+  <div class="card card-ctrl">
+    <div class="card-hd"><div class="card-title">⚙️ Device Controls</div></div>
+    <div class="ctrl-list">
+      <div class="ctrl-row">
+        <div class="ctrl-left">
+          <div class="ctrl-icon bulb">💡</div>
+          <div>
+            <div class="ctrl-name">Light relay</div>
+            <div class="ctrl-state" id="lightState">Inactive</div>
+          </div>
+        </div>
+        <label class="tog">
+          <input type="checkbox" id="lightTog" onchange="toggleDevice('Light',this.checked)">
+          <span class="tog-sl"></span>
+        </label>
+      </div>
+      <div class="ctrl-row">
+        <div class="ctrl-left">
+          <div class="ctrl-icon fan">🌀</div>
+          <div>
+            <div class="ctrl-name">Fan system</div>
+            <div class="ctrl-state" id="fanState">Inactive</div>
+          </div>
+        </div>
+        <label class="tog">
+          <input type="checkbox" id="fanTog" onchange="toggleDevice('Fan',this.checked)">
+          <span class="tog-sl"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-motion">
+    <div class="card-hd"><div class="card-title">📡 Motion & Presence</div></div>
+    <div class="motion-dot-row">
+      <div class="mdot" id="motionDot"></div>
+      <div>
+        <div class="m-txt" id="motionTxt">Scanning perimeter…</div>
+        <div class="m-sub" id="motionSub">Awaiting data</div>
+      </div>
+    </div>
+    <div class="mini-grid">
+      <div class="mini-card">
+        <div class="mini-icon">👁️</div>
+        <div class="mini-val" id="eventsToday">0</div>
+        <div class="mini-lbl">Events today</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-icon">⏰</div>
+        <div class="mini-val" id="lastSeen">--</div>
+        <div class="mini-lbl">Last motion</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-gas">
+    <div class="card-hd"><div class="card-title">🔥 Air & Gas Monitor</div></div>
+    <div class="gas-status" id="gasTxt">Loading sensor data…</div>
+    <div class="gas-track">
+      <div class="gas-fill" id="gasFill"></div>
+    </div>
+    <div class="gas-labels">
+      <span>Safe</span><span>Moderate</span><span>Danger</span>
+    </div>
+    <div class="gas-tags">
+      <span class="gas-tag" style="background:#b8f5d8">CO₂ Monitor Working</span>
+      <span class="gas-tag" style="background:#c0e8ff">LPG Sensor Active</span>
+      <span class="gas-tag" style="background:#e8d8ff">Smoke Detector ON</span>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
