@@ -20,7 +20,7 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 
 | Normal State | Gas Alert State |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" width="400"> | <img src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" width="400"> |
+| <img src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" width="700"> | <img src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" width="700"> |
 
 </div>
 
@@ -29,22 +29,24 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 
 | Circuit Diagram | Hardware Prototype |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" width="400"> | <img src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" width="400"> |
+| <img src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" width="700"> | <img src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" width="700"> |
 
 </div>
 
-### ThingSpeak Analytics Graphs
+### Graphs
 <div align="center">
 
-| Graph 1 | Graph 2 |
-| :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" width="400"> | <img src="https://github.com/user-attachments/assets/cc0aa668-99b5-42bc-83c7-c58dca345086" width="400"> |
+| ThingSpeak Analytics Graphs |
+| :---: |
+| <img src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" width="400"> <br> <img src="https://github.com/user-attachments/assets/cc0aa668-99b5-42bc-83c7-c58dca345086" width="400"> |
 
+</div>
 </div>
 
 ---
 
 ## Hardware Setup & Pin Configuration
+<div align="center">
 | Component           | ESP32 GPIO Pin | Purpose                  |
 | :---                | :---           | :---                     |
 | **PIR Sensor**      | GPIO 13        | Motion detection         |
@@ -52,7 +54,7 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 | **DHT11 Sensor**    | GPIO 4         | Temp/Humidity monitoring |
 | **Relay 1 (Light)** | GPIO 26        | Appliance Control        |
 | **Relay 2 (Fan)**   | GPIO 27        | Appliance Control        |
-
+</div>
 *Note: Use an external 5V/2A power supply for relay modules to ensure stable operation.*
 
 ## Live Simulation
