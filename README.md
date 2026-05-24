@@ -45,6 +45,9 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 
 ---
 
+## Live Simulation
+View the working project here: [Wokwi Simulation](https://wokwi.com/projects/463638858277415937)
+
 ## Hardware Setup & Pin Configuration
 <div align="center">
   
@@ -59,8 +62,33 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 </div>
 *Note: Use an external 5V/2A power supply for relay modules to ensure stable operation.*
 
-## Live Simulation
-View the working project here: [Wokwi Simulation](https://wokwi.com/projects/463638858277415937)
+## Project Setup & Configuration
+Follow these steps to set up the Smart Home Automation system:
+
+### 1. Wokwi Simulation
+* **Create Account:** Sign up at [Wokwi](https://wokwi.com/).
+* **Load Project:** Open the provided [Wokwi Simulation link](https://wokwi.com/projects/463638858277415937).
+* **Update Credentials:** In the `main.ino` file, update your Wi-Fi `SSID` and `Password` to match your local network.
+* **Run:** Click the "Start" button to initialize the simulation.
+
+### 2. Firebase Realtime Database
+* **Project Creation:** Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+* **Database Setup:** Navigate to "Realtime Database" and click "Create Database".
+* **Configure Rules:** Set the database rules for `read` and `write` to `true` to allow data flow.
+* **Integration:** Copy your Firebase `API Key` and `Database URL` from project settings. Paste these credentials into your `main.ino` (for ESP32) and `script.js` (for Web Dashboard).
+
+### 3. ThingSpeak Analytics
+* **Account Setup:** Sign up at [ThingSpeak](https://thingspeak.com/).
+* **Channel Configuration:** Create a "New Channel". Enable "Field 1" for Temperature and "Field 2" for Humidity.
+* **API Key:** Go to the "API Keys" tab in your channel, copy the **Write API Key**, and update it in your ESP32 code (`main.ino`).
+
+### 4. Web Dashboard
+* **File Configuration:** Open the `/web` folder and edit `script.js`.
+* **Update Config:** Replace the placeholder Firebase configuration with the credentials obtained from your Firebase project.
+* **Execution:** Open `index.html` in any modern web browser to view the real-time sensor monitoring dashboard.
+
+---
+*Note: Ensure your ESP32 has a stable internet connection and that all GPIO pins match the hardware configuration provided in the table above.*
 
 ## Future Roadmap
 To further enhance the capabilities of this smart home system, the following upgrades are planned:
