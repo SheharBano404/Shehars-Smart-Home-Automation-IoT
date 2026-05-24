@@ -38,7 +38,7 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 
 | ThingSpeak Analytics Graphs |
 | :---: |
-| <img src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" width="800"> <br> <img src="https://github.com/user-attachments/assets/cc0aa668-99b5-42bc-83c7-c58dca345086" width="800"> |
+| <img src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" width="900"> <br> <img src="https://github.com/user-attachments/assets/cc0aa668-99b5-42bc-83c7-c58dca345086" width="900"> |
 
 </div>
 </div>
