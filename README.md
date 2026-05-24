@@ -2,6 +2,8 @@
 
 A complete IoT-based Smart Home Automation solution that enables remote control of home appliances and real-time sensor monitoring.
 
+<img src="https://github.com/user-attachments/assets/c6c8f3c7-1983-43ed-b73d-ce1f863611e5" style="width: 95%; border: 5px solid #2d3436; border-radius: 10px; display: block; margin: 25px auto;" />
+
 ## Project Overview
 This system utilizes the **ESP32** microcontroller to bridge the gap between physical home appliances and digital cloud platforms. It provides a seamless way to monitor environmental data and control devices from anywhere in the world using a responsive web browser interface.
 
