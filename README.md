@@ -60,6 +60,7 @@ View the working project here: [Wokwi Simulation](https://wokwi.com/projects/463
 | **Relay 2 (Fan)**   | GPIO 27        | Appliance Control        |
 
 </div>
+
 *Note: Use an external 5V/2A power supply for relay modules to ensure stable operation.*
 
 ## Project Setup & Configuration
@@ -89,6 +90,7 @@ Follow these steps to set up the Smart Home Automation system:
 
 ---
 *Note: Ensure your ESP32 has a stable internet connection and that all GPIO pins match the hardware configuration provided in the table above.*
+---
 
 ## Future Roadmap
 To further enhance the capabilities of this smart home system, the following upgrades are planned:
