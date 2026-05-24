@@ -1,4 +1,4 @@
-# Smart Home Automation System (IoT)
+<img width="639" height="460" alt="image" src="https://github.com/user-attachments/assets/ece5fe5d-9182-4dd8-987a-6da10ba74406" /># Smart Home Automation System (IoT)
 
 A complete IoT-based Smart Home Automation solution that enables remote control of home appliances and real-time sensor monitoring.
 
@@ -18,19 +18,19 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 <div align="center">
 
 ### Web Dashboard (Normal vs. Gas Alert State)
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" /> 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" />
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" /> 
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" />
 
 ### Circuit Diagram
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" />
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" />
 
 ### Hardware Prototype
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" />
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" />
 
 ### ThingSpeak Analytics Graphs
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" />
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" />
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/78a213ee-fac2-4b6e-91a8-75bd3b2370a7" />
+<img width="600" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px;" alt="image" src="https://github.com/user-attachments/assets/cc0aa668-99b5-42bc-83c7-c58dca345086" />
 
 </div>
 
@@ -53,6 +53,7 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 ├── db-schema.json   # Firebase Realtime Database structure
 ├── main.ino         # ESP32 code file
 └── README.md        # Documentation
+
 
 ## Live Simulation
 View the working project here: [Wokwi Simulation](https://wokwi.com/projects/463638858277415937)
