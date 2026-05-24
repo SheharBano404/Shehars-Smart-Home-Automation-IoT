@@ -18,16 +18,17 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 <div align="center">
 
 ### Web Dashboard (Normal vs. Gas Alert State)
-<img src="<img width="450" alt="image" src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" /> <img src="<img width="450" alt="image" src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/a5f91365-b72e-4cb7-9a79-8cb15bec40e3" /> 
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/d0e2288f-84d6-4c27-8f71-a8b257475030" />
 
 ### Circuit Diagram
-<img src="<img width="600" alt="image" src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/97acb3e5-34cc-41dc-a073-cd84043664b6" />
 
 ### Hardware Prototype
-<img src="<img width="600" alt="image" src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/9d7d2b51-e4b1-48d9-9e0e-a97c308b4640" />
 
 ### ThingSpeak Analytics Graphs
-<img src="<img width="600" alt="image" src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/d492acd0-622e-451d-b93f-007348aaa797" />
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/78a213ee-fac2-4b6e-91a8-75bd3b2370a7" />
 
@@ -47,9 +48,9 @@ This system utilizes the **ESP32** microcontroller to bridge the gap between phy
 *Note: Use an external 5V/2A power supply for relay modules to ensure stable operation.*
 
 ## 📂 Project Structure
-```text
 ├── web/             # Frontend files (index.html, style.css, script.js)
-├── db-schema.json   # Firebase Realtime Database structure             
+├── images/          # Documentation visuals
+├── db-schema.json   # Firebase Realtime Database structure
 ├── main.ino         # ESP32 code file
 └── README.md        # Documentation
 
